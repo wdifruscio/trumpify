@@ -107,12 +107,10 @@ header{
 	color: $lightblue;
 	transform: translate(-50%, 0);
 	}
-
 	p {
 		margin: 18px 0;
 		padding: 0;
 	}
-
 }
 
 //fieldset numba one
@@ -120,7 +118,7 @@ header{
 .situation{
 	background:$darkblue;
 	color:white;
-	// min-height: 600px;
+	min-height: 600px;
 }
 
 //fieldset two
@@ -128,14 +126,14 @@ header{
 .pickle{
 	background:$red;
 	color:white;
-	// min-height: 600px;
+	min-height: 600px;
 }
 
 //user input fieldset
 
 .userInput{
 	color:$darkblue;
-	// min-height: 600px;
+	min-height: 600px;
 	h2 {
 		margin-bottom: 75px;
 	}
@@ -231,7 +229,7 @@ header{
 .outputFormat{
 	background:$darkblue;
 	color:white;
-	// min-height: 600px;
+	min-height: 600px;
 	ul {
 		width: 90%;
 		margin: 10px 10px;
