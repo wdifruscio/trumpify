@@ -1,0 +1,52 @@
+.output{
+	position:relative;
+	padding:5% 0;
+	height:85vh;
+	max-height:650px;
+	background-color:$darkblue;
+	background-image:url(../assets/dtrump_point.png);
+	background-repeat:no-repeat;
+	background-position:20% 100%;
+	background-size:300px;
+	// background: linear-gradient (to top rgba($darkblue, 0.9) rgba($darkblue, 0.9)),url(../assets/dtrump_point.png);
+	.outputMessage{
+		@include fontStyle($bodyfont,2rem,400,white,1px);
+		background:$lightblue;
+		width:500px;
+		margin:0 auto;
+		text-align:left;
+		padding:25px;
+		border-radius:25px;
+		//tried to use absolute pos to make this work
+		position:relative;
+		// left:35%;
+		&:before{
+			  content:"";
+			  position:absolute;
+			  width: 0; 
+			  height: 0; 
+			  border-left: 0 solid transparent;
+			  border-right: 40px solid transparent; 
+			  border-top: 30px solid $lightblue;
+			  bottom:-28px;
+			  left:50px;
+		}
+	}
+	&:before {
+	content:"\f005" "\f005" "\f005" "\f005" "\f005";
+	font-family: 'FontAwesome';
+	letter-spacing: 2rem;
+	position: absolute;
+	margin: 5px;
+	font-size: 2rem;
+	top: 8%;
+	left: 50%;
+	color: $red;
+	transform: translate(-50%, 0);
+	}
+	.links{
+		background: yellow;
+		display:block;
+		color:black;
+	}
+}

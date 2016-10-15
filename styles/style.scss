@@ -5,7 +5,7 @@
 @import 'partials/buttons';
 
 //-----------------------HIDDEN STYLES------------------------------
-.situation, .pickle, .userInput, .outputFormat, .output {
+.situation, .pickle, .userInput, .outputFormat, .output,.links {
 	display: none;
 }
 
@@ -225,5 +225,5 @@ header{
 		// }
 	}
 }
-
+@import "partials/output";
 @import "partials/queries";

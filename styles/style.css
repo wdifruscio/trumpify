@@ -419,7 +419,7 @@ input:focus {
   color: #1F81B2;
 }
 
-.situation, .pickle, .userInput, .outputFormat, .output {
+.situation, .pickle, .userInput, .outputFormat, .output, .links {
   display: none;
 }
 
@@ -658,6 +658,66 @@ header blockquote {
 .outputFormat ul {
   width: 90%;
   margin: 10px 10px;
+}
+
+.output {
+  position: relative;
+  padding: 5% 0;
+  height: 85vh;
+  max-height: 650px;
+  background-color: #10345B;
+  background-image: url(../assets/dtrump_point.png);
+  background-repeat: no-repeat;
+  background-position: 20% 100%;
+  background-size: 300px;
+}
+
+.output .outputMessage {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  background: #1F81B2;
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 25px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.output .outputMessage:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid #1F81B2;
+  bottom: -28px;
+  left: 50px;
+}
+
+.output:before {
+  content: "\f005" "\f005" "\f005" "\f005" "\f005";
+  font-family: 'FontAwesome';
+  letter-spacing: 2rem;
+  position: absolute;
+  margin: 5px;
+  font-size: 2rem;
+  top: 8%;
+  left: 50%;
+  color: #F22A4C;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.output .links {
+  background: yellow;
+  display: block;
+  color: black;
 }
 
 @media all and (max-width: 822px) {

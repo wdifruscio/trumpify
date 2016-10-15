@@ -404,137 +404,168 @@ $(function(){ //this is doc ready
 		$('.introText').fadeOut();
 		$('header').fadeOut();
 		$('.output').fadeIn();
+		$('.links').fadeIn();
 		//Output appears based on outputType value
 		console.log("Correct");
 
 	//these are for work & school - textMessage
 		if(outputFormat === 'textMessage' && individualPickle === 'workLate'){ 
-			$('.output').prepend("<div>"+textLateOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textLateOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'workSupposedTo'){
-			$('.output').prepend("<div>"+textSupposedToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textSupposedToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'workWrong'){
-			$('.output').prepend("<div>"+textWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'workDontWantTo'){
-			$('.output').prepend("<div>"+textDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 	//these are for social -textMessage
 		if(outputFormat === 'textMessage' && individualPickle === 'socialLate'){
-			$('.output').prepend("<div>"+textLateOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textLateOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'socialWrong'){
-			$('.output').prepend("<div>"+textWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'socialDontWantTo'){
-			$('.output').prepend("<div>"+textDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'socialDontAttend'){	
-			$('.output').prepend("<div>"+textDontAttendOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textDontAttendOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 	//these are for relationships -textMessage
 		if(outputFormat === 'textMessage' && individualPickle === 'relationshipForgot'){
-			$('.output').prepend("<div>"+textForgotOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textForgotOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'relationshipWrong'){	
-			$('.output').prepend("<div>"+textWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'relationshipDontWantTo'){	
-			$('.output').prepend("<div>"+textDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'textMessage' && individualPickle === 'relationshipSaid'){	
-			$('.output').prepend("<div>"+textSaidOutput);
+			$('.output').prepend("<div class='outputMessage'>"+textSaidOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		
 		//these are for Work & school - email
 		if(outputFormat === 'emailMessage' && individualPickle === 'workLate'){
-			$('.output').prepend("<div>"+emailLateOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailLateOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'workSupposedTo'){
-			$('.output').prepend("<div>"+emailSupposedToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailSupposedToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'workWrong'){
-			$('.output').prepend("<div>"+emailWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'workDontWantTo'){
-			$('.output').prepend("<div>"+emailDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		//these are for Social - email
 		if(outputFormat === 'emailMessage' && individualPickle === 'socialLate'){
-			$('.output').prepend("<div>"+emailLateOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailLateOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'socialWrong'){
-			$('.output').prepend("<div>"+emailWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'socialDontWantTo'){
-			$('.output').prepend("<div>"+emailDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'socialDontAttend'){
-			$('.output').prepend("<div>"+emailDontAttendOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailDontAttendOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		//these are for Relationship - email
 		if(outputFormat === 'emailMessage' && individualPickle === 'relationshipForgot'){
-			$('.output').prepend("<div>"+emailForgotOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailForgotOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'relationshipWrong'){
-			$('.output').prepend("<div>"+emailWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'relationshipDontWantTo'){
-			$('.output').prepend("<div>"+emailDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'emailMessage' && individualPickle === 'relationshipSaid'){
-			$('.output').prepend("<div>"+emailSaidOutput);
+			$('.output').prepend("<div class='outputMessage'>"+emailSaidOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 
 		//these are for work - haiku
 		if(outputFormat === 'haiku' && individualPickle === 'workLate'){
-			$('.output').prepend("<div>"+haikuLateOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuLateOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'workSupposedTo'){
-			$('.output').prepend("<div>"+haikuSupposedToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuSupposedToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'workWrong'){
-			$('.output').prepend("<div>"+haikuWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'workDontWantTo'){
-			$('.output').prepend("<div>"+haikuDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		//these are for Social - haiku
 		if(outputFormat === 'haiku' && individualPickle === 'socialLate'){
-			$('.output').prepend("<div>"+haikuLateOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuLateOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'socialWrong'){
-			$('.output').prepend("<div>"+haikuWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'socialDontWantTo'){
@@ -542,24 +573,29 @@ $(function(){ //this is doc ready
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'socialDontAttend'){
-			$('.output').prepend("<div>"+haikuDontAttendOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuDontAttendOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		//these are for Relationship - haiku
 		if(outputFormat === 'haiku' && individualPickle === 'relationshipForgot'){
-			$('.output').prepend("<div>"+haikuForgotOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuForgotOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'relationshipWrong'){
-			$('.output').prepend("<div>"+haikuWrongOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuWrongOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'relationshipDontWantTo'){
-			$('.output').prepend("<div>"+haikuDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'relationshipSaid'){
-			$('.output').prepend("<div>"+haikuSaidOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuSaidOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 		
 	}); //end of submit function
