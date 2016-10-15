@@ -660,14 +660,6 @@ header blockquote {
   margin: 10px 10px;
 }
 
-.outputFormat ul:nth-child(2n) {
-  margin-right: 10px;
-}
-
-.outputFormat ul:nth-child(3n) {
-  margin-right: 0;
-}
-
 @media all and (max-width: 822px) {
   header h1 {
     font-size: 10rem;
@@ -733,6 +725,9 @@ header blockquote {
     font-size: 1.2rem;
   }
   fieldset .wrapper ul li {
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     height: 80px;
   }
   .userInput {
