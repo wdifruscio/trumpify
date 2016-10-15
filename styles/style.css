@@ -722,7 +722,10 @@ header blockquote {
     padding: 25px 0;
   }
   label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+  fieldset .wrapper ul {
+    width: 90%;
   }
   fieldset .wrapper ul li {
     -webkit-flex: 1 1 100%;
@@ -733,7 +736,12 @@ header blockquote {
   .userInput {
     padding: 0;
   }
+  .userInput .inputNameLine p, .userInput .inputYourNameLine p {
+    display: block;
+    margin-bottom: -5px;
+  }
   .userInput .inputNameLine label, .userInput .inputYourNameLine label {
+    height: auto;
     left: 50%;
     width: 100%;
   }

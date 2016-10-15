@@ -77,19 +77,24 @@ $largeScreen: 1400px;
 		padding:25px 0;
 	}
 	label{
-		font-size:1.2rem;
+		font-size:1.5rem;
 	}
-	fieldset .wrapper ul li{
+	fieldset .wrapper ul{
+		width:90%;
+		li{
 		flex:1 1 100%;
 		height:80px;
-	}
-	fieldset .userInput{
-
+		}
 	}
 	.userInput{
 		padding:0;
 		.inputNameLine, .inputYourNameLine{
+			p{
+				display:block;
+				margin-bottom:-5px;
+			}
 			label{
+				height:auto;
 				left:50%;
 				width:100%;
 			}
