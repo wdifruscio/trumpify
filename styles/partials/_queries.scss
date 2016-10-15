@@ -102,6 +102,9 @@ $largeScreen: 1400px;
 		padding:10% 0;
 		margin-top:10px;
 	}
+	footer{
+		left:-55px;
+	}
 
 }
 @media all and (max-width:$stupidphone){
@@ -119,8 +122,4 @@ $largeScreen: 1400px;
 	label{
 		font-size:1.1rem;
 	}
-	footer{
-		left:-50px;
-	}
-
 }
