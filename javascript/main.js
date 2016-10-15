@@ -325,9 +325,14 @@ $(function(){ //this is doc ready
 		}
 	}); // pickle click function end
 
-	//User selects outputType
-	//Store value
-
+	$('input[name=outputType]').on('click', function(){
+		//Add red background to selected label
+			var id = $(this).attr('id');
+			console.log($('label[for=' + id + ']'));
+		$('.selectLabelOutput').removeClass('redBackground');
+		$('label[for=' + id + ']').addClass('redBackground');
+		
+	});
 //user click "Trumpify" (submit)
 	$('form').on('submit', function(e){   //submit function
 		e.preventDefault();
@@ -392,14 +397,7 @@ $(function(){ //this is doc ready
 
 		var outputFormat = $('input[name=outputType]:checked').val();
 
-		$('label[for=outputFormat]').on('click', function(){
 
-			//Add red background to selected label
-				var id = $(this).attr('id');
-				$('.selectLabelOutput').removeClass('redBackground');
-				$('label[for=' + id + ']').toggleClass('redBackground');
-
-		});
 		
 		// REMOVE FIELDSET AND FADE IN OUTPUT. (removing fieldset is to prevent users from clicking multiple submits)
 		$('fieldset').fadeOut();
