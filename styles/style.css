@@ -718,8 +718,9 @@ header blockquote {
     width: 300px;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 25px 0;
+    line-height: 2.4;
   }
   label {
     font-size: 1.5rem;
