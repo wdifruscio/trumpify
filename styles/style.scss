@@ -137,8 +137,6 @@ header{
 	h2 {
 		margin-bottom: 75px;
 	}
-
-
 	.inputNameLine, .inputReasonLine, .inputYourNameLine {
 		display: block;
 		margin-bottom: 50px;
@@ -146,36 +144,35 @@ header{
 		p {
 			display: inline;
 		}
-
 	}
 
-.inputNameLine {
-	label {
-	position: absolute;
-	top: 100%;
-	left: 60%;
-	transform: translate(-50%, 0);
+	.inputNameLine {
+		label {
+		position: absolute;
+		top: 100%;
+		left: 60%;
+		transform: translate(-50%, 0);
+		}
 	}
-}
 
-.inputReasonLine {
-	label {
-	position: absolute;
-	top: 100%;
-	left: 74%;
-	transform: translate(-50%, 0);
+	.inputReasonLine {
+		label {
+		position: absolute;
+		top: 100%;
+		left: 74%;
+		transform: translate(-50%, 0);
+		}
 	}
-}
 
-.inputYourNameLine {
-	label {
-	position: absolute;
-	top: 100%;
-	left: 63%;
-	transform: translate(-50%, 0);
+	.inputYourNameLine {
+		label {
+		position: absolute;
+		top: 100%;
+		left: 63%;
+		transform: translate(-50%, 0);
+		}
 	}
-}
-	
+		
 	h2 {
 		color: $darkblue;
 	}
@@ -187,7 +184,7 @@ header{
 		margin: 0;
 		display: inline;
 		@include fontStyle($bodyfont, 2.2rem, 400, $darkblue, 0.2px);
-		padding: 0 10px;
+		// padding: 0 10px;
 		line-height: 2rem;
 	}
 
@@ -205,21 +202,6 @@ header{
 	// display: inline-block;
 	&:hover, &:focus {
 		background: none;
-	}
-	}
-}
-
-.downButton {
-	width: 100px;
-	height: 100px;
-	a {
-		color: $red;
-		font-size: 5rem;
-		border-radius: 50%;
-		padding: 25% 0;
-
-		&:hover {
-			color: $lightblue;
 		}
 	}
 }

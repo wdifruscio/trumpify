@@ -304,10 +304,15 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s all ease;
 }
 
 label:hover, label:focus {
   background: #F22A4C;
+}
+
+.outputChoices li {
+  flex: 1 1 30%;
 }
 
 .pickle label:hover, .pickle label:focus {
@@ -334,6 +339,7 @@ button {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   margin-top: 50px;
+  transition: 0.3s all ease;
 }
 
 button:hover, button:focus {
@@ -355,6 +361,7 @@ input[type=submit] {
   color: white;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  transition: 0.3s all ease;
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
@@ -363,6 +370,23 @@ input[type=submit]:hover, input[type=submit]:focus {
 
 input:focus {
   outline: none;
+}
+
+.downButton {
+  width: 100px;
+  height: 100px;
+}
+
+.downButton a {
+  color: #F22A4C;
+  font-size: 5rem;
+  border-radius: 50%;
+  padding: 25% 0;
+  transition: 0.3s all ease;
+}
+
+.downButton a:hover {
+  color: #1F81B2;
 }
 
 .situation, .pickle, .userInput, .outputFormat, .output {
@@ -547,7 +571,6 @@ header blockquote {
   font-weight: 400;
   color: #10345B;
   letter-spacing: 0.2px;
-  padding: 0 10px;
   line-height: 2rem;
 }
 
@@ -570,22 +593,6 @@ header blockquote {
 
 .userInput label:hover, .userInput label:focus {
   background: none;
-}
-
-.downButton {
-  width: 100px;
-  height: 100px;
-}
-
-.downButton a {
-  color: #F22A4C;
-  font-size: 5rem;
-  border-radius: 50%;
-  padding: 25% 0;
-}
-
-.downButton a:hover {
-  color: #1F81B2;
 }
 
 .outputFormat {
@@ -629,6 +636,12 @@ header blockquote {
   .introText:before {
     top: 3%;
   }
+  .userInput h2 {
+    margin-bottom: 0;
+  }
+  .userInput .inputReasonLine label {
+    left: 50%;
+  }
   fieldset .wrapper ul li {
     height: 100px;
   }
@@ -637,6 +650,11 @@ header blockquote {
   }
   label {
     font-size: 1.5rem;
+  }
+  button, input[type=submit] {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 15px;
   }
 }
 
@@ -655,7 +673,6 @@ header blockquote {
   }
   h2 {
     font-size: 1.6rem;
-    margin: 25px 0;
     padding: 25px 0;
   }
   label {
@@ -664,7 +681,37 @@ header blockquote {
   fieldset .wrapper ul li {
     height: 80px;
   }
-  .userInput .inputNameLine label, .userInput .inputReasonLine label, .userInput .inputYourNameLine label {
+  .userInput {
+    padding: 0;
+  }
+  .userInput .inputNameLine label, .userInput .inputYourNameLine label {
     left: 50%;
+    width: 100%;
+  }
+  .wrapper {
+    width: 98%;
+    margin: 1% auto;
+  }
+  .downButton a {
+    padding: 10% 0;
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  header img {
+    width: 240px;
+  }
+  label {
+    font-size: 1.1rem;
+  }
+  footer {
+    left: -50px;
   }
 }
