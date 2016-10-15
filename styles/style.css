@@ -226,7 +226,9 @@ fieldset ul {
 
 fieldset ul li {
   margin: 10px 10px;
-  flex: 1 1 250px;
+  flex: 1 1 40%;
+  max-width: 300px;
+  min-width: 200px;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -599,4 +601,10 @@ header blockquote {
 
 .outputFormat ul:nth-child(3n) {
   margin-right: 0;
+}
+
+@media all and (max-width: 822px) {
+  fieldset .wrapper ul li {
+    height: 100px;
+  }
 }

@@ -1,0 +1,19 @@
+$stupidphone: 350px;
+$smartphone: 480px;
+$tabletPortrait: 822px;
+// $tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1400px;
+@media all and (max-width:$desktop){
+}
+@media all and (max-width:$tabletPortrait){
+	fieldset .wrapper ul li{
+		height:100px;
+	}
+}
+@media all and (max-width:$smartphone){
+
+}
+@media all and (max-width:$stupidphone){
+
+}
