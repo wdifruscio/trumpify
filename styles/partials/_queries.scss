@@ -88,6 +88,15 @@ $largeScreen: 1400px;
 	}
 	.userInput{
 		padding:0;
+		.inputReasonLine{
+			p{
+				display:block;
+				margin-bottom:-5px;
+			}
+			label{
+				height:auto;
+			}
+		}
 		.inputNameLine, .inputYourNameLine{
 			p{
 				display:block;

@@ -736,6 +736,13 @@ header blockquote {
   .userInput {
     padding: 0;
   }
+  .userInput .inputReasonLine p {
+    display: block;
+    margin-bottom: -5px;
+  }
+  .userInput .inputReasonLine label {
+    height: auto;
+  }
   .userInput .inputNameLine p, .userInput .inputYourNameLine p {
     display: block;
     margin-bottom: -5px;
