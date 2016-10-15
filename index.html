@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trumpify Your Excuse</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<h1>Trump</h1>
+		<h2>(ify) Your Excuse</h2>
+		<img src="assets/donald.png" alt="Donald">
+		<blockquote>"Make Excuses Great Again"</blockquote>
+	</header>
+
+	<main>
+		<section class="introText wrapper">
+			<p>We get it. Sometimes the truth just won’t do.
+
+			<p>And you’ve used your regular ol’ humdrum excuses so many times, eyes start rolling the minute you open your mouth.
+
+			<p>You need something new.
+
+			<p>For those times you find yourself in a deep, dirty pickle and need an excuse so incomprehensible and/or offensive it’ll shock the “refute” right out of people, we (and Donald) have got you covered.
+
+			<p><span class ="largeRed">Together, we WILL Make Excuses Great Again.</span></p>
+
+			<button onclick="scrollToSituation()">Let's Get Started</button>
+		</section>
+
+		<form action="">
+			<fieldset class="situation" id="situation">
+				<div class="wrapper">
+					<h2>What kind of situation do you need an excuse for?</h2>
+					<ul>
+						<li><label for="work" id="workLabel" class="selectLabelSituation">Work</label>
+						<input type="radio" name="individualSituation" id="work" value="work"></li>
+						<li><label for="social" id="socialLabel" class="selectLabelSituation">Social</label>
+						<input type="radio" name="individualSituation" id="social" value="social"></li>
+						<li><label for="relationship" class="selectLabelSituation">Relationship</label>
+						<input type="radio" name="individualSituation" id="relationship" value="relationship" ></li>
+						<li><label for="school" class="selectLabelSituation">School</label>
+						<input type="radio" name="individualSituation" id="school" value="school" ></li>
+					</ul>
+				</div>
+			</fieldset>
+		
+			<fieldset class="pickle" id="pickle">
+				<div class="wrapper">
+				<h2>What kind of pickle are you in?</h2>
+					<ul class="workPickles">
+						<li><label for="workLate" class="selectLabelPickle">I'm late</label>
+						<input type="radio" name="individualPickle" id="workLate" value="workLate"></li>
+						<li><label for="workSupposedTo" class="selectLabelPickle">I didn't do something I was supposed to</label>
+						<input type="radio" name="individualPickle" id="workSupposedTo" value="workSupposedTo"></li>
+						<li><label for="workWrong" class="selectLabelPickle">I did something wrong</label>
+						<input type="radio" name="individualPickle" id="workWrong" value="workWrong"></li>
+						<li><label for="workDontWantTo" class="selectLabelPickle">I don't want to do something</label>
+						<input type="radio" name="individualPickle" id="workDontWantTo" value="workDontWantTo"></li>
+					</ul>
+					<ul class="socialPickles">
+						<li><label for="socialLate" class="selectLabelPickle">I'm late</label>
+						<input type="radio" name="individualPickle" id="socialLate" value="socialLate"></li>
+						<li><label for="socialWrong" class="selectLabelPickle">I did something wrong</label>
+						<input type="radio" name="individualPickle" id="socialWrong" value="socialWrong"></li>
+						<li><label for="socialDontWantTo" class="selectLabelPickle">I don't want to do something</label>
+						<input type="radio" name="individualPickle" id="socialDontWantTo" value="socialDontWantTo"></li>
+						<li><label for="socialDontAttend" class="selectLabelPickle">I don't want to attend something</label>
+						<input type="radio" name="individualPickle" id="socialDontAttend" value="socialDontAttend"></li>
+					</ul>
+					<ul class="relationshipPickles">
+						<li><label for="relationshipForgot" class="selectLabelPickle">I forgot an anniversary</label>
+						<input type="radio" name="individualPickle" id="relationshipForgot" value="relationshipForgot"></li>
+						<li><label for="relationshipWrong" class="selectLabelPickle">I did something wrong</label>
+						<input type="radio" name="individualPickle" id="relationshipWrong" value="relationshipWrong"></li>
+						<li><label for="relationshipDontWantTo" class="selectLabelPickle">I don't want to do something</label>
+						<input type="radio" name="individualPickle" id="relationshipDontWantTo" value="relationshipDontWantTo"></li>
+						<li><label for="relationshipSaid" class="selectLabelPickle">I said something wrong</label>
+						<input type="radio" name="individualPickle" id="relationshipSaid" value="relationshipSaid"></li>
+					</ul>
+				</div>
+			</fieldset>
+			
+			<fieldset class="userInput" id="userInput">
+				<div class="wrapper">
+					<h2>Fill in the blanks below <br> (Don't worry, we'll add the excuse for you)</h2>
+					<div class="inputNameLine"><p>Dear</p> <input type="text" name="name" id="name" required>
+					<label for="name">(who we should address the excuse to)</label></div>
+					<div class="inputReasonLine"><p id="inputReasonP"></p> <input type="text" id="inputReason" name="inputReason" required>
+					<label for="inputReason" id="inputReasonLabel"></label></div>
+					<div class="inputYourNameLine"><p>Sincerely</p> <input type="text" name="yourName" id="yourName" required>
+					<label for="yourName">(your name)</label></div>
+					<div class="downButton"><a href="#outputFormat" title="go to the next section"><i class="fa fa-angle-down"></i></a></div>
+				</div>
+			</fieldset>
+			<fieldset class="outputFormat" id="outputFormat">
+			<div class="wrapper">
+				<h2>How do you want to communicate your excuse?</h2>
+					<ul>
+						<li><input type="radio" name="outputType" id="textMessage" value="textMessage"><label for="outputFormat" class="selectLabelOutput">Text Message</label></li>
+						<li><input type="radio" name="outputType" id="emailMessage" value="emailMessage" checked=true><label for="outputFormat" class="selectLabelOutput">Email</label></li>
+						<li><input type="radio" name="outputType" id="haiku" value="haiku"><label for="outputFormat" class="selectLabelOutput">Haiku</label></li>
+					</ul>
+					<div class="submitButton"><input type="submit" value="Trumpify!"></div>
+			</div>
+			</fieldset>
+			
+			<section class="output" id="output">
+				<a href="" class="copy" id="copy">Copy</a>
+				<a href="" class="tweet" target="_blank">Tweet</a>
+				<a href="" class="startOver">Start Over</a>
+			</section>
+		</form>
+	</main>
+
+	<footer>
+		<p>Created by <a href="http://willcodes.ca" target="_blank">Will</a> & <a href="http://saraberkes.com" target="_blank">Sara</a></p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
+	<script src="javascript/main.js"></script>
+</body>
+</html>

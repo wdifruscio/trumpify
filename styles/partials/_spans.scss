@@ -1,0 +1,7 @@
+.largeRed{
+	@include fontStyle($bodyfont, 4rem, 600, $red, 0.3px);
+	color:$red;
+	margin-top: 2rem;
+	display: block;
+	line-height: 4.4rem;
+}

@@ -1,0 +1,247 @@
+@import 'partials/variables';
+@import 'partials/_mixins';
+@import 'partials/base';
+@import 'partials/spans';
+@import 'partials/buttons';
+
+//-----------------------HIDDEN STYLES------------------------------
+.situation, .pickle, .userInput, .outputFormat, .output {
+	display: none;
+}
+
+.workPickles, .socialPickles, .relationshipPickles {
+	display: none;
+}
+
+.userInput label {
+	font-size: 10px;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+// ^^^^^^ STYLING FOR JS /testing---------------------------------------------
+
+//styling for the header below
+header{
+	// height:100vh;
+	// max-height:900px;
+	// min-height: 700px;
+	background: $darkblue;
+	text-transform:uppercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	//this is the trump image
+		img {
+			width: 600px;
+			margin-bottom: 0;
+			margin-top: auto;
+		}
+	//this is the trump text
+	h1{
+		@include fontStyle($titlefont,15.3rem,400,white,7px);
+		margin: 0;
+		margin-top: 55px;
+		line-height: 12rem;
+		position: relative;
+
+		&:before {
+			content:"\f005" "\f005" "\f005" "\f005" "\f005";
+			font-family: 'FontAwesome';
+			letter-spacing: 2rem;
+			position: absolute;
+			font-size: 2rem;
+			top: -65%;
+			left: 50%;
+			color: $red;
+			transform: translate(-50%, 0);
+		}
+	}
+	//this is below trump text
+	h2{
+		margin:0;
+		padding: 0;
+		@include fontStyle($titlefont,4rem,400,$lightblue,4.2px);
+		line-height: 6.2rem;
+	}
+	//this is blockquote for the bottom, picture will be above
+	blockquote{
+		@include fontStyle($titlefont,3.8rem,400,white,3px);
+		width:100%;
+		padding: 40px 0;
+		margin:0;
+		background: $red;
+		color:white;
+		margin-bottom: 0;
+		border-top: 4px solid white;
+	}
+}
+
+//intro section
+
+.introText{
+	color:$darkblue;
+	@include fontStyle($bodyfont, 2.2rem, 400, $darkblue, 0.2px);
+	line-height: 3.2rem;
+	min-height: 800px;
+	padding: 75px 0 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+//this is the stars in the intro section
+	&:before {
+	content:"\f005" "\f005" "\f005" "\f005" "\f005";
+	font-family: 'FontAwesome';
+	letter-spacing: 2rem;
+	position: absolute;
+	margin: 5px;
+	font-size: 2rem;
+	top: 8%;
+	left: 50%;
+	color: $lightblue;
+	transform: translate(-50%, 0);
+	}
+
+	p {
+		margin: 18px 0;
+		padding: 0;
+	}
+
+}
+
+//fieldset numba one
+
+.situation{
+	background:$darkblue;
+	color:white;
+	// min-height: 600px;
+}
+
+//fieldset two
+
+.pickle{
+	background:$red;
+	color:white;
+	// min-height: 600px;
+}
+
+//user input fieldset
+
+.userInput{
+	color:$darkblue;
+	// min-height: 600px;
+	h2 {
+		margin-bottom: 75px;
+	}
+
+
+	.inputNameLine, .inputReasonLine, .inputYourNameLine {
+		display: block;
+		margin-bottom: 50px;
+		position: relative;
+		p {
+			display: inline;
+		}
+
+	}
+
+.inputNameLine {
+	label {
+	position: absolute;
+	top: 100%;
+	left: 60%;
+	transform: translate(-50%, 0);
+	}
+}
+
+.inputReasonLine {
+	label {
+	position: absolute;
+	top: 100%;
+	left: 74%;
+	transform: translate(-50%, 0);
+	}
+}
+
+.inputYourNameLine {
+	label {
+	position: absolute;
+	top: 100%;
+	left: 63%;
+	transform: translate(-50%, 0);
+	}
+}
+	
+	h2 {
+		color: $darkblue;
+	}
+
+	input[type=text] {
+		border: none;
+		border-bottom: 2px $red solid;
+		padding: 0;
+		margin: 0;
+		display: inline;
+		@include fontStyle($bodyfont, 2.2rem, 400, $darkblue, 0.2px);
+		padding: 0 10px;
+		line-height: 2rem;
+	}
+
+	label {
+	@include fontStyle($bodyfont, 1.2rem, 400, $darkblue, 0.5px);
+	line-height: 1.8rem;
+	background: none;
+	border: none;
+	text-transform: none;
+	padding: none;
+	width: none;
+	height: none;
+	margin: none;
+	cursor: default;
+	// display: inline-block;
+	&:hover, &:focus {
+		background: none;
+	}
+	}
+}
+
+.downButton {
+	width: 100px;
+	height: 100px;
+	a {
+		color: $red;
+		font-size: 5rem;
+		border-radius: 50%;
+		padding: 25% 0;
+
+		&:hover {
+			color: $lightblue;
+		}
+	}
+}
+
+//output format
+
+.outputFormat{
+	background:$darkblue;
+	color:white;
+	// min-height: 600px;
+	ul {
+		width: 90%;
+		margin: 10px 10px;
+
+		&:nth-child(2n){
+				margin-right: 10px;
+		}
+
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+	}
+}
