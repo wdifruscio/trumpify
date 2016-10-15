@@ -73,9 +73,10 @@ $largeScreen: 1400px;
 		}
 	}
 	h2{
-		font-size:2rem;
-		padding:25px 0;
-		line-height:2.4;
+		font-size:2.2rem;
+		padding:15px 0;
+		line-height:2.8rem;
+		margin-bottom:0;
 	}
 	label{
 		font-size:1.5rem;
@@ -84,7 +85,6 @@ $largeScreen: 1400px;
 		width:90%;
 		li{
 		flex:1 1 100%;
-		height:80px;
 		}
 	}
 	.userInput{
