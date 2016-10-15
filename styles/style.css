@@ -653,6 +653,11 @@ header blockquote {
   header img {
     width: 300px;
   }
+  h2 {
+    font-size: 1.6rem;
+    margin: 25px 0;
+    padding: 25px 0;
+  }
   label {
     font-size: 1.2rem;
   }
