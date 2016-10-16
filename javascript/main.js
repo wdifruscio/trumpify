@@ -405,7 +405,10 @@ $(function(){ //this is doc ready
 		$('header').fadeOut();
 		$('.links').fadeIn();
 		$('.output').fadeIn();
-		window.location.href='#output';
+				setTimeout(function(){
+		window.scrollTo(0, 0);
+	},
+		30);
 		//Output appears based on outputType value
 		console.log("Correct");
 
