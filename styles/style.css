@@ -681,7 +681,7 @@ header blockquote {
     left: 50%;
   }
   fieldset .wrapper ul li {
-    height: 100px;
+    height: 90px;
   }
   button, input[type=submit] {
     letter-spacing: 1px;

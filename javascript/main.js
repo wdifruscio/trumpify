@@ -403,8 +403,8 @@ $(function(){ //this is doc ready
 		$('fieldset').fadeOut();
 		$('.introText').fadeOut();
 		$('header').fadeOut();
-		$('.output').fadeIn();
 		$('.links').fadeIn();
+		$('.output').fadeIn();
 		//Output appears based on outputType value
 		console.log("Correct");
 
