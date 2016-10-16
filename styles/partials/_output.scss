@@ -6,9 +6,8 @@
 	background-color:$darkblue;
 	background-image:url(../assets/dtrump_point.png);
 	background-repeat:no-repeat;
-	background-position:20% 100%;
-	background-size:300px;
-	// background: linear-gradient (to top rgba($darkblue, 0.9) rgba($darkblue, 0.9)),url(../assets/dtrump_point.png);
+	background-position:18% 100%; // this is x and y coords, currently 20% from the left and sitting at the bottom
+	background-size:300px; //this changes the size of our friend
 	.outputMessage{
 		@include fontStyle($bodyfont,2rem,400,white,1px);
 		background:$lightblue;
@@ -18,7 +17,7 @@
 		padding:25px;
 		border-radius:25px;
 		//tried to use absolute pos to make this work
-		position:relative;
+		position:relative; //change this to absolute if you wanna move it somewhere
 		// left:35%;
 		&:before{
 			  content:"";
@@ -44,9 +43,86 @@
 	color: $red;
 	transform: translate(-50%, 0);
 	}
-	.links{
-		background: yellow;
-		display:block;
-		color:black;
+}
+ul.social{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	margin:0 auto;
+	width:65%;
+	li {
+		flex:1 1 32%;
+		margin:10px auto;
+		max-width:200px;
+	}
+	a{
+		border: none;
+		background: $lightblue;
+		border-radius: 20px;
+		padding: 15px 30px;
+		text-decoration:none;
+		@include fontStyle($bodyfont, 2rem, 700, white,1px);
+		text-transform: uppercase;
+		transition:0.3s all ease;
+		&:hover{
+			background:$red;
+		}
 	}
 }
+
+
+
+@media all and (max-width:$desktop){
+		.output{
+		background-position:10% 100%; // this is x and y coords, currently 20% from the left and sitting at the bottom
+		background-size:275px; //this changes the size of our friend
+		.outputMessage{
+			width:450px;
+		}
+		&:before {
+			top:5%;
+		}
+	}
+}
+@media all and (max-width:$tabletLandscape){
+	.output{
+		background-size:250px;
+		.outputMessage{
+			width:400px;
+		}
+	}
+}
+
+@media all and (max-width:$tabletPortrait){
+		.output{
+			background-position:5% 100%; // this is x and y coords, currently 20% from the left and sitting at the bottom
+			background-size:200px; //this changes the size of our friend
+			.outputMessage{
+				width:350px;
+			}
+			&:before {
+				top:2%;
+		}
+	}
+}
+@media all and (max-width:$outputMobile){
+		.output{
+			background-image:url(../assets/dtrump_point_mobile.png);
+			background-position:50% 100%; // this is x and y coords, currently 20% from the left and sitting at the bottom
+			background-size:300px; //this changes the size of our friend
+			.outputMessage{
+				width:300px;
+				font-size:1.8rem;
+			}
+			&:before {
+				top:2%;
+			}
+			ul.social{
+				flex-wrap:wrap;
+				li{
+					margin:1% 0;
+					flex:1 1 100%;
+				}
+			}
+		}
+	}

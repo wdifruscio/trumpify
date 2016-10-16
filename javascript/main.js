@@ -569,7 +569,8 @@ $(function(){ //this is doc ready
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'socialDontWantTo'){
-			$('.output').prepend("<div>"+haikuDontWantToOutput);
+			$('.output').prepend("<div class='outputMessage'>"+haikuDontWantToOutput);
+			$('.output').prepend("<div><h2>"+"Heres your excuse!");
 		}
 
 		if(outputFormat === 'haiku' && individualPickle === 'socialDontAttend'){

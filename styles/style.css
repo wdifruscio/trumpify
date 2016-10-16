@@ -660,66 +660,6 @@ header blockquote {
   margin: 10px 10px;
 }
 
-.output {
-  position: relative;
-  padding: 5% 0;
-  height: 85vh;
-  max-height: 650px;
-  background-color: #10345B;
-  background-image: url(../assets/dtrump_point.png);
-  background-repeat: no-repeat;
-  background-position: 20% 100%;
-  background-size: 300px;
-}
-
-.output .outputMessage {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: white;
-  letter-spacing: 1px;
-  background: #1F81B2;
-  width: 500px;
-  margin: 0 auto;
-  text-align: left;
-  padding: 25px;
-  border-radius: 25px;
-  position: relative;
-}
-
-.output .outputMessage:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 0 solid transparent;
-  border-right: 40px solid transparent;
-  border-top: 30px solid #1F81B2;
-  bottom: -28px;
-  left: 50px;
-}
-
-.output:before {
-  content: "\f005" "\f005" "\f005" "\f005" "\f005";
-  font-family: 'FontAwesome';
-  letter-spacing: 2rem;
-  position: absolute;
-  margin: 5px;
-  font-size: 2rem;
-  top: 8%;
-  left: 50%;
-  color: #F22A4C;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.output .links {
-  background: yellow;
-  display: block;
-  color: black;
-}
-
 @media all and (max-width: 822px) {
   header h1 {
     font-size: 10rem;
@@ -838,5 +778,161 @@ header blockquote {
   }
   label {
     font-size: 1.1rem;
+  }
+}
+
+.output {
+  position: relative;
+  padding: 5% 0;
+  height: 85vh;
+  max-height: 650px;
+  background-color: #10345B;
+  background-image: url(../assets/dtrump_point.png);
+  background-repeat: no-repeat;
+  background-position: 18% 100%;
+  background-size: 300px;
+}
+
+.output .outputMessage {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  background: #1F81B2;
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 25px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.output .outputMessage:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid #1F81B2;
+  bottom: -28px;
+  left: 50px;
+}
+
+.output:before {
+  content: "\f005" "\f005" "\f005" "\f005" "\f005";
+  font-family: 'FontAwesome';
+  letter-spacing: 2rem;
+  position: absolute;
+  margin: 5px;
+  font-size: 2rem;
+  top: 8%;
+  left: 50%;
+  color: #F22A4C;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+ul.social {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 auto;
+  width: 65%;
+}
+
+ul.social li {
+  -webkit-flex: 1 1 32%;
+      -ms-flex: 1 1 32%;
+          flex: 1 1 32%;
+  margin: 10px auto;
+  max-width: 200px;
+}
+
+ul.social a {
+  border: none;
+  background: #1F81B2;
+  border-radius: 20px;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+}
+
+ul.social a:hover {
+  background: #F22A4C;
+}
+
+@media all and (max-width: 1174px) {
+  .output {
+    background-position: 10% 100%;
+    background-size: 275px;
+  }
+  .output .outputMessage {
+    width: 450px;
+  }
+  .output:before {
+    top: 5%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .output {
+    background-size: 250px;
+  }
+  .output .outputMessage {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 822px) {
+  .output {
+    background-position: 5% 100%;
+    background-size: 200px;
+  }
+  .output .outputMessage {
+    width: 350px;
+  }
+  .output:before {
+    top: 2%;
+  }
+}
+
+@media all and (max-width: 590px) {
+  .output {
+    background-image: url(../assets/dtrump_point_mobile.png);
+    background-position: 50% 100%;
+    background-size: 300px;
+  }
+  .output .outputMessage {
+    width: 300px;
+    font-size: 1.8rem;
+  }
+  .output:before {
+    top: 2%;
+  }
+  .output ul.social {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .output ul.social li {
+    margin: 1% 0;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
