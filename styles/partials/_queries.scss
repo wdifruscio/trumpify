@@ -10,31 +10,31 @@ $largeScreen: 1400px;
 @media all and (max-width:$tabletPortrait){
 	header{
 		h1{
-			font-size:10rem;
+			font-size:12rem;
+			line-height: 10rem;
 		}
 		h2{
 			font-size:3rem;
+			// line-height: 3.4rem;
 		}
 		blockquote{
-			font-size:2rem;
+			font-size:3rem;
 		}
 		img{
-			width:400px;
+			width:500px;
 		}
 	}
-	h2{
-		font-size:2rem;
-	}
+	// h2{
+	// 	font-size:2.4rem;
+	// 	line-height: 2.8rem;
+	// }
 	.introText{
-		p{
-			font-size:1.5rem;
-		}
+		// p{
+		// 	font-size:1.8rem;
+		// }
 		&:before{
 			top:3%;
 		}
-	}
-	.userInput h2{
-		margin-bottom:0;
 	}
 	.userInput{
 		.inputReasonLine{
@@ -46,42 +46,50 @@ $largeScreen: 1400px;
 	fieldset .wrapper ul li{
 		height:100px;
 	}
-	.largeRed{
-		font-size:2rem;
-	}
-	label{
-		font-size:1.5rem;
-	}
 	button, input[type=submit]{
-		font-size:1.5rem;
+		// font-size:1.5rem;
 		letter-spacing:1px;
-		padding:15px;
+		padding:15px 30px;
 	}
 }
-@media all and (max-width:$smartphone){
+
+@media all and (max-width:$outputMobile){
 	header{
 		h1{
-			font-size:7rem;
+			font-size:10rem;
+			// line-height: 10rem;
 		}
 		h2{
-			font-size:2rem;
+			font-size:2.5rem;
+			line-height: 2.6rem;
 		}
 		blockquote{
-			font-size:1.8rem;
+			font-size:2.4rem;
 		}
 		img{
-			width:300px;
+			width:450px;
 		}
 	}
-	h2{
-		font-size:2.2rem;
-		padding:15px 0;
-		line-height:2.4rem;
-		margin-bottom:0;
+
+	p {
+		font-size: 2rem;
 	}
+
+
+	.largeRed{
+		font-size:3rem;
+	}
+	
 	label{
-		font-size:1.5rem;
+		font-size:2rem;
 	}
+
+	h2{
+		font-size:3rem;
+		line-height:3.4rem;
+		margin-bottom:20px;
+	}
+
 	fieldset .wrapper ul{
 		width:90%;
 		li{
@@ -98,6 +106,12 @@ $largeScreen: 1400px;
 			label{
 				height:auto;
 			}
+		}
+
+		input[type=text] {
+			font-size: 2rem;
+			width: 300px;
+			text-align: center;
 		}
 		.inputNameLine, .inputYourNameLine{
 			p{
@@ -124,19 +138,66 @@ $largeScreen: 1400px;
 	}
 
 }
+@media all and (max-width:$smartphone){
+	header{
+		h1{
+			font-size:7.8rem;
+			line-height: 7.8rem;
+		}
+		h2{
+			font-size:2.2rem;
+			line-height: 2.4rem;
+		}
+		img{
+			width:300px;
+		}
+	}
+
+	p {
+		font-size: 1.8rem;
+	}
+
+	h2 {
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
+
+	.introText {
+		width: 90%;
+	}
+	
+	label{
+		font-size:1.8rem;
+	}
+.userInput {
+	input[type=text] {
+			font-size: 1.8rem;
+			width: 250px;
+			text-align: center;
+		}
+
+	.inputNameLine {
+		margin-top: 10px;
+	}
+	}
+}
+
 @media all and (max-width:$stupidphone){
 	header{
 		h1{
-			font-size:4rem;
+			font-size:6.5rem;
+			line-height: 6.5rem;
 		}
 		h2{
-			font-size:1.5rem;
+			font-size:2rem;
+			line-height: 2.2rem;
 		}
 		img{
-			width:240px;
+			width:300px;
 		}
 	}
-	label{
-		font-size:1.1rem;
+		label{
+		font-size:1.6rem;
+		line-height: 2rem;
 	}
 }

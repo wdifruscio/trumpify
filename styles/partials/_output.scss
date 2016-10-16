@@ -1,8 +1,9 @@
 .output{
 	position:relative;
 	padding:5% 0;
-	height:85vh;
+	height:80vh;
 	max-height:650px;
+	min-height: 500px; //added Min height so it didn't collapse
 	background-color:$darkblue;
 	background-image:url(../assets/dtrump_point.png);
 	background-repeat:no-repeat;
@@ -44,16 +45,24 @@
 	transform: translate(-50%, 0);
 	}
 }
+
+.links {
+	width: 100%;
+}
+
 ul.social{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
 	margin:0 auto;
 	width:65%;
+	height: 20vh; // added height so buttons sit centred
 	li {
-		flex:1 1 32%;
+		// flex:1 1 32%;
 		margin:10px auto;
-		max-width:200px;
+		width:200px; //made buttons fixed height so the "start over" text didn't stack (made the button look weird)
 	}
 	a{
 		border: none;
@@ -92,17 +101,48 @@ ul.social{
 		}
 	}
 }
+.links {
+	width: 100%; // added a width to links to make the buttons move responsively
+	margin: 0 auto;
+}
+
+
+ul.social{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+	margin:0 auto;
+	width:80%;
+	height: 20vh; // added height so buttons sit centred
+	li {
+		// flex:1 1 32%;
+		margin:10px auto;
+		width:200px;
+	}
+}
 
 @media all and (max-width:$tabletPortrait){
 		.output{
 			background-position:5% 100%; // this is x and y coords, currently 20% from the left and sitting at the bottom
-			background-size:200px; //this changes the size of our friend
+			background-size:250px; //this changes the size of our friend
 			.outputMessage{
 				width:350px;
 			}
 			&:before {
 				top:2%;
 		}
+
+	.links {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+		ul.social{
+				width: 90%;
+
+			}
 	}
 }
 @media all and (max-width:$outputMobile){
@@ -110,19 +150,25 @@ ul.social{
 			background-image:url(../assets/dtrump_point_mobile.png);
 			background-position:50% 100%; // this is x and y coords, currently 20% from the left and sitting at the bottom
 			background-size:300px; //this changes the size of our friend
+			min-height: auto;
+			height: 80vh;
 			.outputMessage{
 				width:300px;
 				font-size:1.8rem;
+				margin-top: 50px;
 			}
 			&:before {
-				top:2%;
+				top:3%;
 			}
+
+			.links {
+				width: 100%;
+			}
+
 			ul.social{
+				width: 100%;
 				flex-wrap:wrap;
-				li{
-					margin:1% 0;
-					flex:1 1 100%;
 				}
 			}
 		}
-	}
+	

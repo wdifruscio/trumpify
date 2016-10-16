@@ -569,10 +569,6 @@ header blockquote {
   min-height: 600px;
 }
 
-.userInput h2 {
-  margin-bottom: 75px;
-}
-
 .userInput .inputNameLine, .userInput .inputReasonLine, .userInput .inputYourNameLine {
   display: block;
   margin-bottom: 50px;
@@ -581,6 +577,10 @@ header blockquote {
 
 .userInput .inputNameLine p, .userInput .inputReasonLine p, .userInput .inputYourNameLine p {
   display: inline;
+}
+
+.userInput .inputNameLine {
+  margin-top: 30px;
 }
 
 .userInput .inputNameLine label {
@@ -662,28 +662,20 @@ header blockquote {
 
 @media all and (max-width: 822px) {
   header h1 {
-    font-size: 10rem;
+    font-size: 12rem;
+    line-height: 10rem;
   }
   header h2 {
     font-size: 3rem;
   }
   header blockquote {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   header img {
-    width: 400px;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  .introText p {
-    font-size: 1.5rem;
+    width: 500px;
   }
   .introText:before {
     top: 3%;
-  }
-  .userInput h2 {
-    margin-bottom: 0;
   }
   .userInput .inputReasonLine label {
     left: 50%;
@@ -691,40 +683,39 @@ header blockquote {
   fieldset .wrapper ul li {
     height: 100px;
   }
-  .largeRed {
-    font-size: 2rem;
-  }
-  label {
-    font-size: 1.5rem;
-  }
   button, input[type=submit] {
-    font-size: 1.5rem;
     letter-spacing: 1px;
-    padding: 15px;
+    padding: 15px 30px;
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 590px) {
   header h1 {
-    font-size: 7rem;
+    font-size: 10rem;
   }
   header h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
   }
   header blockquote {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
   header img {
-    width: 300px;
+    width: 450px;
   }
-  h2 {
-    font-size: 2.2rem;
-    padding: 15px 0;
-    line-height: 2.4rem;
-    margin-bottom: 0;
+  p {
+    font-size: 2rem;
+  }
+  .largeRed {
+    font-size: 3rem;
   }
   label {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+    margin-bottom: 20px;
   }
   fieldset .wrapper ul {
     width: 90%;
@@ -743,6 +734,11 @@ header blockquote {
   }
   .userInput .inputReasonLine label {
     height: auto;
+  }
+  .userInput input[type=text] {
+    font-size: 2rem;
+    width: 300px;
+    text-align: center;
   }
   .userInput .inputNameLine p, .userInput .inputYourNameLine p {
     display: block;
@@ -766,26 +762,65 @@ header blockquote {
   }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 480px) {
   header h1 {
-    font-size: 4rem;
+    font-size: 7.8rem;
+    line-height: 7.8rem;
   }
   header h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
   }
   header img {
-    width: 240px;
+    width: 300px;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .introText {
+    width: 90%;
   }
   label {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
+  }
+  .userInput input[type=text] {
+    font-size: 1.8rem;
+    width: 250px;
+    text-align: center;
+  }
+  .userInput .inputNameLine {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  header h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+  }
+  header h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  header img {
+    width: 300px;
+  }
+  label {
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 }
 
 .output {
   position: relative;
   padding: 5% 0;
-  height: 85vh;
+  height: 80vh;
   max-height: 650px;
+  min-height: 500px;
   background-color: #10345B;
   background-image: url(../assets/dtrump_point.png);
   background-repeat: no-repeat;
@@ -835,6 +870,10 @@ header blockquote {
           transform: translate(-50%, 0);
 }
 
+.links {
+  width: 100%;
+}
+
 ul.social {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -845,16 +884,20 @@ ul.social {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   width: 65%;
+  height: 20vh;
 }
 
 ul.social li {
-  -webkit-flex: 1 1 32%;
-      -ms-flex: 1 1 32%;
-          flex: 1 1 32%;
   margin: 10px auto;
-  max-width: 200px;
+  width: 200px;
 }
 
 ul.social a {
@@ -898,16 +941,54 @@ ul.social a:hover {
   }
 }
 
+.links {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul.social {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 20vh;
+}
+
+ul.social li {
+  margin: 10px auto;
+  width: 200px;
+}
+
 @media all and (max-width: 822px) {
   .output {
     background-position: 5% 100%;
-    background-size: 200px;
+    background-size: 250px;
   }
   .output .outputMessage {
     width: 350px;
   }
   .output:before {
     top: 2%;
+  }
+  .output .links {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .output ul.social {
+    width: 90%;
   }
 }
 
@@ -916,23 +997,24 @@ ul.social a:hover {
     background-image: url(../assets/dtrump_point_mobile.png);
     background-position: 50% 100%;
     background-size: 300px;
+    min-height: auto;
+    height: 80vh;
   }
   .output .outputMessage {
     width: 300px;
     font-size: 1.8rem;
+    margin-top: 50px;
   }
   .output:before {
-    top: 2%;
+    top: 3%;
+  }
+  .output .links {
+    width: 100%;
   }
   .output ul.social {
+    width: 100%;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-  }
-  .output ul.social li {
-    margin: 1% 0;
-    -webkit-flex: 1 1 100%;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
   }
 }

@@ -135,7 +135,7 @@ header{
 	color:$darkblue;
 	min-height: 600px;
 	h2 {
-		margin-bottom: 75px;
+		// margin-bottom: 75px;
 	}
 	.inputNameLine, .inputReasonLine, .inputYourNameLine {
 		display: block;
@@ -147,6 +147,7 @@ header{
 	}
 
 	.inputNameLine {
+		margin-top: 30px;
 		label {
 		position: absolute;
 		top: 100%;
