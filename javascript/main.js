@@ -618,8 +618,8 @@ function scrollToSituation(){
 $('a').smoothScroll({
 		offset: 0,
 		speed: 250
-	});
-
+});
+new Clipboard('.copy');
 
 
 
